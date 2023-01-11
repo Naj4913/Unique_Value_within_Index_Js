@@ -1,3 +1,5 @@
-Description: This code based on the project done in GAS (Google Apps Script), however the concept and idea has extracted from the Javascript model.
+Description: This function based on the project done in GAS (Google Apps Script), however the concept and idea has extracted from the Javascript model.
 
-Requirement: Basic Knowledge in Javascript
+Requirement: Basic Knowledge in Javascript and GAS
+
+Summary: this function is used for filter an index with mix object values (string, float, integer etc) and created a new index with unique object values. the this repository consists in 2 parts of code in Javascript and GAS and its application.
