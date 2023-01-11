@@ -1,0 +1,24 @@
+function find_Unique_values_Index (){
+  //Either we declare the index or get the index from the dataset
+  let index_Origin = [index_Values]
+	
+	//Declare a new index to store the unique value
+	var index_Unique = []
+	
+	//Push the first value of index_Origin to the index_Unique
+	index_Unique.push(index_Origin[0])
+	
+	//Declare for Loop with the lenght of index_Unique - 1 due to first value of index_Origin won't be counted
+	for(i=1;i<index_Origin.lenght;i++){
+	
+		//Use a conditional expression if and comparing the next value of index_origin with the values appended to the index_Unique,
+		if(index_Unique.join().indexOf(index_Origin[i])==-1){
+		
+			//Push the value if different
+			index_Unique.push(index_Origin[i]
+		}
+	}
+	
+	//Return the index_Unique
+	return index_Unique
+}
