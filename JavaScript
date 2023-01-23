@@ -1,3 +1,4 @@
+//Find Unique Values with the Classic function
 function find_Unique_values_Index (){
 
   //Either we declare the index or get the index from the dataset
@@ -9,17 +10,22 @@ function find_Unique_values_Index (){
 	//Push the first value of index_Origin to the index_Unique
 	index_Unique.push(index_Origin[0])
 	
-	//Declare for Loop with the lenght of index_Unique - 1 due to first value of index_Origin won't be counted
+	//Declare for Loop with the lenght of index_Origin - 1 due to first value of index_Origin won't be counted
 	for(i=1;i<index_Origin.lenght;i++){
 	
-		//Use a conditional expression if and comparing the next value of index_origin with the values appended to the index_Unique,
+		//Use a conditional expression if and comparing the current value of index_Origin to be appended with the values accumulated to the index_Unique, !There will be some particular case for the use of join() function.
 		if(index_Unique.join().indexOf(index_Origin[i])==-1){
 		
-			//Push the value if different
-			index_Unique.push(index_Origin[i]
+			//Push the value if it's different
+			index_Unique.push(index_Origin[i])
 		}
 	}
 	
 	//Return the index_Unique
 	return index_Unique
 }
+
+//Find Unique Values with the Reduce() & Find() function of array (Single & Multidimensional Array)
+
+const array = [your_Array]
+const unique_Values_Array = array.reduce((accumulator,currentvalue) => {if (!accumulator.find(element => element[Column to sort uniquely] === currentvalue[Column to sort uniquely])){accumulator.push(currentvalue)}return accumulator},[])
