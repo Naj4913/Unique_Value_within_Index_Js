@@ -1,4 +1,4 @@
-//Find Unique Values with the Classic function
+//Find Unique Values from singledimensionelle array with the Classic function
 function find_Unique_values_Index (){
 
   //Either we declare the index or get the index from the dataset
